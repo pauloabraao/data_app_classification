@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 # Carregamento dos dados
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/datatran2025.csv", encoding="ISO-8859-1", delimiter=';')
+    return pd.read_csv("app/data/datatran2025.csv", encoding="ISO-8859-1", delimiter=';')
 
 df = load_data()
 st.title("🔍 Classificação - Acidentes de Trânsito")
